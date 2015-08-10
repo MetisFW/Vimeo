@@ -1,0 +1,7 @@
+extensions:
+    vimeo: MetisFW\Vimeo\DI\VimeoExtension
+
+vimeo:
+  clientId: c6c31a6440e1bfa0ef7f3a1e2da6dea91b4b0c31
+  clientSecret: 8uwnvt4tLGtrZAvfBvZmBMiypmlL8Do1R3oBbVmsyvVy9HnXMozCcMiWdo1hwM4YMSyTquW8KdjPqp5pIjC11XTE9JvYs+PBxD92ka4VY1jFrVkX9m/3cLlkK0ZzToK4
+  accessToken: b93322a9f6791685bb7d50f89fa365fb
