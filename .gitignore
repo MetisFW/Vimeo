@@ -1,7 +1,4 @@
-*.iml
-.idea/
-/vendor/
+vendor/
 composer.lock
-/tests/tmp
 
 
