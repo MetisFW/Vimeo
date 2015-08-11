@@ -16,7 +16,7 @@ interface VimeoPlayerControlFactory {
    * @param array $playerParameters
    * @return VimeoPlayerControl
    */
-  function create($videoId, array $playerParameters = []);
+  function create($videoId, array $playerParameters = array());
 
 }
 
@@ -35,7 +35,7 @@ class VimeoPlayerControl extends Control {
   /**
    * @var array Parameters that can be used with the Universal Player https://developer.vimeo.com/player/embedding
    */
-  private $playerParameters = [
+  private $playerParameters = array(
     'autopause' => 1,
     'autoplay' => 0,
     'badge' => 1,
@@ -45,13 +45,13 @@ class VimeoPlayerControl extends Control {
     'player_id' => null,
     'portrait' => 1,
     'title' => 1
-  ];
+  );
 
   /**
    * @param int $videoId
    * @param array $playerParameters
    */
-  public function __construct($videoId, array $playerParameters = []) {
+  public function __construct($videoId, array $playerParameters = array()) {
     parent::__construct();
     $this->videoId = $videoId;
 
@@ -124,7 +124,7 @@ class VimeoPlayerControl extends Control {
    * @param int $height
    * @param array $parameters
    */
-  public function render($width = 630, $height = 354, $parameters = []) {
+  public function render($width = 630, $height = 354, $parameters = array()) {
     $template = $this->template;
 
     $this->setPlayerParameters($parameters);

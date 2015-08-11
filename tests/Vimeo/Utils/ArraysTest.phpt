@@ -11,21 +11,21 @@ require_once __DIR__.'/../../bootstrap.php';
 class ArraysTest extends TestCase {
 
   public function testArrayOnly() {
-    $array = [
+    $array = array(
       'a' => 1,
       'b' => 2,
       'c' => 3
-    ];
+    );
 
-    $keys = [
+    $keys = array(
       'a',
       'c'
-    ];
+    );
 
-    $result = [
+    $result = array(
       'a' => 1,
       'c' => 3
-    ];
+    );
 
     Assert::equal($result, Arrays::only($array, $keys));
   }

@@ -19,7 +19,7 @@ class VimeoPlayerControlTest extends TestCase {
   private $videoPlayerControl;
 
   /** @var array */
-  private $testParameters = [
+  private $testParameters = array(
     'autopause' => 1,
     'autoplay' => 0,
     'badge' => 1,
@@ -29,7 +29,7 @@ class VimeoPlayerControlTest extends TestCase {
     'player_id' => null,
     'portrait' => 1,
     'title' => 1
-  ];
+  );
 
   /** @var Container */
   private $container;
@@ -85,10 +85,10 @@ class VimeoPlayerControlTest extends TestCase {
    * @throws \MetisFW\Vimeo\InvalidPlayerParameterException
    */
   public function testSetWrongParameters() {
-    $wrongParameters = [
+    $wrongParameters = array(
       'foo',
       'bar'
-    ];
+    );
 
     $this->videoPlayerControl->setPlayerParameters($wrongParameters);
   }

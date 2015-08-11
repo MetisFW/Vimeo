@@ -10,17 +10,17 @@ class VimeoFactory {
   /**
    * @var array
    */
-  private $requiredConfig = [
+  private $requiredConfig = array(
     'clientId',
     'clientSecret'
-  ];
+  );
 
   /**
    * @var array
    */
-  private $optionalConfig = [
+  private $optionalConfig = array(
     'accessToken'
-  ];
+  );
 
   /**
    * Make a new Vimeo client.

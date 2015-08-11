@@ -14,7 +14,7 @@ class VimeoPlayerUrlTest extends TestCase {
   private $videoId = 1;
 
   /** @var array */
-  private $parameters = [
+  private $parameters = array(
     'autopause' => 1,
     'autoplay' => 0,
     'badge' => 1,
@@ -24,7 +24,7 @@ class VimeoPlayerUrlTest extends TestCase {
     'player_id' => 'vimeoPlayer1',
     'portrait' => 1,
     'title' => 1
-  ];
+  );
 
   public function testGenerateVideoLink() {
     $link = 'https://player.vimeo.com/video/1?&autopause=1&autoplay=0&badge=1&byline=1&color=00adef&loop=0&player_id=vimeoPlayer1&portrait=1&title=1';

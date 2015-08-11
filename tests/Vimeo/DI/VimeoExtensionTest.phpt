@@ -18,13 +18,6 @@ class VimeoExtensionTest extends TestCase {
   /** @var Container */
   private $container;
 
-  /** @var array */
-  private $testConfig = [
-    'clientId' => 'a',
-    'clientSecret' => 'b',
-    'accessToken' => 'c'
-  ];
-
   public function setUp() {
     $this->container = $this->generateContainer();
     $this->vimeoContext = $this->container->getService('vimeo.vimeo');

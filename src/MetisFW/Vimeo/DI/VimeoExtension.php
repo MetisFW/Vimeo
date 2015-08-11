@@ -9,9 +9,9 @@ class VimeoExtension extends CompilerExtension {
   /**
    * @var array
    */
-  private $defaults = [
+  private $defaults = array(
     'accessToken' => null
-  ];
+  );
 
   public function loadConfiguration() {
     $config = $this->getConfig($this->defaults);
