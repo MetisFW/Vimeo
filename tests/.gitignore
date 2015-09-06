@@ -1,3 +1,2 @@
-coverage.dat
-*.actual
-*.expected
+output
+/tmp

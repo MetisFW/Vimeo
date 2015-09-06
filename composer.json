@@ -2,16 +2,9 @@
   "name": "metisfw/vimeo",
   "type": "library",
   "description": "Vimeo SDK integration for Nette Framework",
-  "keywords": [
-    "nette",
-    "vimeo"
-  ],
+  "keywords": ["nette", "vimeo"],
   "homepage": "https://github.com/MetisFW",
-  "license": [
-    "BSD-3-Clause",
-    "GPL-2.0",
-    "GPL-3.0"
-  ],
+  "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
   "authors": [
     {
       "name": "GrowJOB s.r.o",
@@ -19,9 +12,13 @@
     },
     {
       "name": "Lukáš Drahník",
-      "email": "ldrahnik@gmail.com"
+      "email": "lukas.drahnik@growjob.com"
     }
   ],
+  "support": {
+    "email": "dev@growjob.com",
+    "issues": "https://github.com/MetisFW/Vimeo/issues"
+  },
   "require": {
     "php": ">=5.3.0",
     "ext-curl": "*",
@@ -54,13 +51,12 @@
     "tracy/tracy": "~2.3@dev",
     "nette/tester": "@dev"
   },
-  "support": {
-    "email": "dev@growjob.com",
-    "issues": "https://github.com/MetisFW/Vimeo/issues"
-  },
   "autoload": {
     "psr-0": {
       "MetisFW\\Vimeo\\": "src/"
     }
+  },
+  "archive": {
+    "exclude": ["tests", ".travis.yml"]
   }
 }
