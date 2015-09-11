@@ -23,7 +23,7 @@ MetisFW/Vimeo requires PHP 5.3.0 or higher with curl, json extensions.
 
 ## Documentation
 
-Learn more in the [documentation](https://github.com/MetisFW/PayPal/blob/master/docs/en/index.md).
+Learn more in the [documentation](https://github.com/MetisFW/Vimeo/blob/master/docs/en/index.md).
 
 There are other classes in this package that are not documented here. 
 This is because the package is a Nette wrapper of [the official Vimeo package](https://github.com/vimeo/vimeo.php).
