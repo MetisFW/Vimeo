@@ -65,11 +65,11 @@ class VimeoPlayerControl extends Control {
    * @throws InvalidPlayerParameterException
    */
   public function setPlayerParameters(array $parameters) {
-    foreach($this->playerParameters as $key => $value) {
-      if(!array_key_exists($key, $parameters)) {
+    foreach($parameters as $key => $value) {
+      if(!array_key_exists($key, $this->playerParameters)) {
         throw new InvalidPlayerParameterException("Key '$key' is not name of configurable Universal Player parameter.");
       }
-      $this->playerParameters[$key] = $parameters[$key];
+      $this->playerParameters[$key] = $value;
     }
   }
 
