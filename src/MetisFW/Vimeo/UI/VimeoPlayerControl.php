@@ -116,7 +116,7 @@ class VimeoPlayerControl extends Control {
    * @param $templateFilePath
    */
   public function setTemplateFilePath($templateFilePath) {
-    $this->setTemplateFilePath($templateFilePath);
+    $this->templateFilePath = $templateFilePath;
   }
 
   /**
