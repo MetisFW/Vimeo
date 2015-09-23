@@ -124,14 +124,12 @@ class VimeoPlayerControl extends Control {
    * @param int $height
    * @param array $parameters
    */
-  public function render($width = 630, $height = 354, $parameters = array()) {
+  public function render($width = 630, $height = 354, array $parameters = array()) {
     $template = $this->template;
 
-    $this->setPlayerParameters($parameters);
-
-    $urlParameters = $this->playerParameters;
+    $urlParameters = $this->getMergedParameters($parameters);
     unset($urlParameters['player_id']);
-    $template->videoUrl = VimeoPlayerUrl::getUrl($this->videoId, $urlParameters);
+    $template->videoUrl = $this->getUrl($urlParameters);
 
     $template->playerId = $this->getParameter('player_id');
     $template->playerWidth = $width;
@@ -143,6 +141,29 @@ class VimeoPlayerControl extends Control {
 
   protected function getDefaultTemplateFilePath() {
     return __DIR__.'/templates/VimeoPlayerControl.latte';
+  }
+
+  /**
+   * @param array $parameters
+   * @return array
+   */
+  protected function getMergedParameters(array $parameters) {
+    $result = $this->playerParameters;
+    foreach($parameters as $key => $value) {
+      if(!isset($this->playerParameters[$key]) && !array_key_exists($key, $this->playerParameters)) {
+        throw new InvalidPlayerParameterException("Key '$key' is not name of configurable Universal Player parameter.");
+      }
+      $result[$key] = $value;
+    }
+    return $result;
+  }
+
+  /**
+   * @param array $requestParameters
+   * @return string
+   */
+  public function getUrl(array $requestParameters) {
+    return VimeoPlayerUrl::getUrl($this->videoId, $requestParameters);
   }
 
 }
