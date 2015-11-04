@@ -131,7 +131,7 @@ class VimeoPlayerControl extends Control {
     unset($urlParameters['player_id']);
     $template->videoUrl = $this->getUrl($urlParameters);
 
-    $template->playerId = $this->getParameter('player_id');
+    $template->playerId = $this->getPlayerParameter('player_id');
     $template->playerWidth = $width;
     $template->playerHeight = $height;
     $templateFilePath = ($this->templateFilePath ? $this->templateFilePath : $this->getDefaultTemplateFilePath());
