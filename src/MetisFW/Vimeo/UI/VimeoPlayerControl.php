@@ -6,20 +6,6 @@ use MetisFW\Vimeo\InvalidPlayerParameterException;
 use MetisFW\Vimeo\Utils\VimeoPlayerUrl;
 use Nette\Application\UI\Control;
 
-/**
- * @return VimeoPlayerControl
- */
-interface VimeoPlayerControlFactory {
-
-  /**
-   * @param $videoId
-   * @param array $playerParameters
-   * @return VimeoPlayerControl
-   */
-  function create($videoId, array $playerParameters = array());
-
-}
-
 class VimeoPlayerControl extends Control {
 
   /**
