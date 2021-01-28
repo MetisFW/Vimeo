@@ -2,9 +2,11 @@
 
 namespace MetisFW\Vimeo;
 
-use Nette\Object;
+use Nette\SmartObject;
 
-class VimeoContext extends Object {
+class VimeoContext {
+
+  use SmartObject;
 
   /**
    * @var array
