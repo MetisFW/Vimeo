@@ -56,7 +56,7 @@
       "MetisFW\\Vimeo\\": "src/"
     },
     "files": [
-      "src/Vimeo/exceptions.php"
+      "src/MetisFW/Vimeo/exceptions.php"
     ]
   },
   "archive": {
