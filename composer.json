@@ -54,7 +54,10 @@
   "autoload": {
     "psr-0": {
       "MetisFW\\Vimeo\\": "src/"
-    }
+    },
+    "files": [
+      "src/Vimeo/exceptions.php"
+    ]
   },
   "archive": {
     "exclude": ["tests", ".travis.yml"]
