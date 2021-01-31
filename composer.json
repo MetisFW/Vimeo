@@ -52,12 +52,7 @@
     "nette/tester": "@dev"
   },
   "autoload": {
-    "psr-0": {
-      "MetisFW\\Vimeo\\": "src/"
-    },
-    "files": [
-      "src/MetisFW/Vimeo/exceptions.php"
-    ]
+    "classmap": ["src/"]
   },
   "archive": {
     "exclude": ["tests", ".travis.yml"]
