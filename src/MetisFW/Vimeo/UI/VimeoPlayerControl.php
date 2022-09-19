@@ -38,7 +38,6 @@ class VimeoPlayerControl extends Control {
    * @param array $playerParameters
    */
   public function __construct($videoId, array $playerParameters = array()) {
-    parent::__construct();
     $this->videoId = $videoId;
 
     if(!empty($playerParameters)) {

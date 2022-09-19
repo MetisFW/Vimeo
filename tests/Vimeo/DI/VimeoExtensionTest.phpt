@@ -3,8 +3,8 @@
 namespace Tests\Vimeo\DI;
 
 use MetisFW\Vimeo\VimeoContext;
+use Nette\Bootstrap\Configurator;
 use Nette\ComponentModel\Container;
-use Nette\Configurator;
 use Tester\Assert;
 use Tester\TestCase;
 
