@@ -105,8 +105,8 @@ class VimeoPlayerControl extends Control {
   }
 
   /**
-   * @param int $width
-   * @param int $height
+   * @param int|string $width
+   * @param int|string $height
    * @param array $parameters
    */
   public function render($width = 630, $height = 354, array $parameters = array()) {
