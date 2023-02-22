@@ -119,8 +119,12 @@ class VimeoPlayerControl extends Control {
     $template->playerId = $this->getPlayerParameter('player_id');
     $template->playerWidth = $width;
     $template->playerHeight = $height;
-    $templateFilePath = ($this->templateFilePath ? $this->templateFilePath : $this->getDefaultTemplateFilePath());
-    $template->setFile($templateFilePath);
+    if($this->templateFilePath) {
+      /** @phpstan-latte-ignore */
+      $template->setFile($this->templateFilePath);
+    } else {
+      $template->setFile($this->getDefaultTemplateFilePath());
+    }
     $template->render();
   }
 
